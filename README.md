@@ -1,3 +1,1 @@
-# Warsztaty_JS
-
-Workshops after JavaScript module
+# Learning purposes only
