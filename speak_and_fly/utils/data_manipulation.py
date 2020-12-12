@@ -90,3 +90,39 @@ def assign_multiple_course_to_student(student, courses):
     for course in courses:
         student.courses.append(course)
     session.commit()
+
+
+def list_students() -> None:
+    print("\n###  STUDENTS TABLE  ###")
+
+    for student in session.query(Students):
+        print(student)
+
+    print("###  ###  ###  ###\n")
+
+
+def list_languages() -> None:
+    print("\n###  LANGUAGES TABLE  ###")
+
+    for language in session.query(Languages):
+        print(language)
+
+    print("###  ###  ###  ###\n")
+
+
+def list_courses() -> None:
+    print("\n###  COURSES TABLE  ###")
+
+    for course in session.query(Courses):
+        print(course)
+
+    print("###  ###  ###  ###\n")
+
+
+def list_levels() -> None:
+    print("\n###  LEVELS TABLE  ###")
+
+    for level in session.query(Levels):
+        print(level)
+
+    print("###  ###  ###  ###\n")
